@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Testing simulated\""
+    "test": "echo \"Testing simulated\"",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
