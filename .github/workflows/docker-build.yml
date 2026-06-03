@@ -14,7 +14,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t my-node-app:latest .
-      - name: Save Docker image to tar
+      - name: Save Docker image to tar #because a Docker image lives inside the Docker daemon (not as a regular file) — you must export it to a file (e.g., with docker save) to upload as an artifact.
         run: |
           docker save -o image.tar my-node-app:latest
       - name: Upload Docker image artifact
