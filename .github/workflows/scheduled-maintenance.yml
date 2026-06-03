@@ -1,4 +1,4 @@
-name: Scehduled Maintenance
+name: Scheduled Maintenance
 
 on:
   schedule:
